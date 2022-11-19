@@ -96,6 +96,12 @@ body * {
     color: #FFFFFF;
 }
 
+.button a{
+    outline: none;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 .header-button {
     padding: 13px 33px;
     margin-right: 0;
@@ -152,6 +158,7 @@ body * {
 }
 
 .subtitle {
+    margin: 0;
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
@@ -174,6 +181,22 @@ body * {
     color: #E3B873 !important;
 }
 
+.white-text {
+    color: #FFFFFF !important;
+}
+
+.light-black-text {
+    color: #363636 !important;
+}
+
+.gray-text {
+    color: #959595 !important; 
+}
+
+.regular-register {
+    text-transform: none !important;
+}
+
 .text {
     font-family: 'Nunito Sans';
     font-style: normal;
@@ -184,6 +207,16 @@ body * {
 .bigger-text {
     font-size: 22px;
     line-height: 36px;
+}
+
+.regular-text {
+    font-size: 18px;
+    line-height: 37px;
+}
+
+.regular-text:nth-of-type(1) {
+    width: 681px;
+    text-align: center;
 }
 
 .smaller-text {
@@ -231,15 +264,16 @@ body * {
     justify-content: space-between
 }
 
+.slider {
+    background-color: transparent;
+    border: none;
+}
+
 .vertical-list-no-bullet-points {
     display: flex;
     list-style-type: none;
     padding: 0;
-}
-
-.vertical-list-no-bullet-points:first-of-type {
-    margin-top: 0px;
-    margin-bottom: 45px;
+    margin: 0;
 }
 
 .section-2-vertical-list-item {
@@ -257,6 +291,188 @@ body * {
     margin-right: 0px;
 }
 
+.main-section-3 {
+    height: 2576px;
+    background-color: #FFFFFF;
+}
+
+.section-3-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -330px;
+}
+
+.img-opacity {
+    background: #000;
+
+}
+
+.img-opacity img {
+    opacity: 0.3;
+}
+
+.img-opacity:first-of-type {
+    margin-top: 31px;
+    margin-bottom: 62px;
+    height: 434px;
+    width: 817px;
+    position: relative;
+}
 
 
+.play-button {
+    position: absolute;
+    top: 165px;
+    right: 357px;
+    padding: 29px 29px 28px 33px;
+    background: #E3B873;
+    border: 0px;
+    border-radius: 50px;
+    outline: 0;
+    color: #FFFFFF;
+}
 
+.play-icon {
+    opacity: 1 !important;
+}
+
+.input-list-section-3 {
+    margin-top: 73px;
+
+}
+
+.input-list-item {
+    margin-right: 58px;
+}
+
+.text-field {
+    margin-bottom: 1rem;
+}
+
+.text-field-label {
+    display: block;
+    margin-bottom: 1.5px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(54, 54, 54, 0.5);
+}
+
+.text-field-input {
+    display: block;
+    width: 231px;
+    height: 25px;
+    padding: 0;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: #363636;
+    text-align: start;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+}
+
+.text-field-input::placeholder {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: #363636;
+}
+
+#submit_button_section_3 {
+    padding: 20px 75px;
+}
+
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    margin-bottom: 130px;
+}
+
+.custom-checkbox+label::before {
+    content: '';
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 1px;
+    margin-right: 8.5px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.custom-checkbox:checked+label::before {
+    border: none;
+    background-color: #E3B873;
+    background-image: url(../images/check_mark.svg);
+}
+
+.custom-checkbox:disabled+label::before {
+    background-color: transparent;
+}
+
+.custom-checkbox:not(:disabled):active+label::before {
+    background-color: #E3B873;
+    border: none;
+}
+
+.section-3-list-repairs-images {
+    margin-top: 31px;
+    width: 1236px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section-3-list-repairs-wrapper {
+    width: 1236px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section-3-list-repairs {
+    width: 330px;
+    background-color: #FFFFFF;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -133px;
+}
+
+.section-3-list-repairs-item {
+    margin-left: 34px;
+}
+
+.section-3-list-repairs-sublist {
+    list-style-type: disc;
+    margin-top: -5px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    padding: 0;
+}
+
+.section-3-list-repairs-button {
+    padding: 20px 15px;
+    width: 228px;
+    position: relative;
+}
