@@ -471,7 +471,7 @@ body * {
 }
 
 .section-4-list-repairs-box {
-    width: 1236px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: 31px;
@@ -1002,6 +1002,10 @@ footer {
     margin-top: 3px;
 }
 
+.footer-map-mobile-small {
+    display: none;
+}
+
 .footer-nav {
     height: 133px;
 }
@@ -1023,11 +1027,12 @@ footer {
     }
 
     body {
-        min-width: 1300px;
+        max-width: 1300px;
+        min-width: fit-content;
     }
 
     .header-container {
-        max-width: 1024px;
+        max-width: 514px;
     }
 
     .nav-bar {
@@ -1050,7 +1055,7 @@ footer {
     }
 
     .main-section-1 {
-        padding-top: 52px;
+        padding-top: 85px;
         height: 640px;
     }
 
@@ -1062,6 +1067,7 @@ footer {
 
     .title {
         text-align: center;
+        margin: 0;
     }
 
     .text {
@@ -1095,6 +1101,10 @@ footer {
         margin-top: 22px;
     }
 
+    .section-2-description-list p {
+        margin-top: 0;
+    }
+
     .section-2-image-mobile-wrapper {
         width: 442px;
         display: flex !important;
@@ -1102,13 +1112,13 @@ footer {
     }
 
     .section-2-image-mobile {
-        width: 500px;
+        width: inherit;
     }
 
     .round-button-arrow {
         background: #E3B873;
         border-radius: 50px;
-        width: 36px;
+        width: 36px !important;
         height: 36px;
         background-image: url(../images/Vector\ \(Stroke\)\ left.svg);
         background-position: center;
@@ -1156,18 +1166,18 @@ footer {
         margin-top: 31px;
         margin-bottom: 62px;
         height: 250px;
-        width: 500px;
+        width: inherit;
         position: relative;
     }
 
     .img-opacity img{
-        width: 500px;
+        width: inherit;
         height: 250px;
     }
 
     .play-button {
         top: 87px;
-        right: 210px;
+        right: 183px;
     }
 
     .regular-text {
@@ -1178,7 +1188,7 @@ footer {
         font-size: 15px;
         line-height: 30px;
         text-align: center;
-        width: 500px;
+        width: 470px;
     }
 
     .horizontal-list-no-bullet-points {
@@ -1269,6 +1279,7 @@ footer {
         left: 0;
         margin-left: 0;
         margin-top: 220px;
+        width: 100%;
     }
 
     .questions-form-flex {
@@ -1292,6 +1303,10 @@ footer {
         margin-top: 26.5px;
     }
 
+    .footer-map {
+        max-width: 660px;
+    }
+
     .footer-box-order {
         margin: 132px 0 50px;      
     }
@@ -1301,21 +1316,212 @@ footer {
     .footer-box-order div:nth-child(2) {order: 3;}
 
     .footer-box-order div:nth-child(3) {order: 1;}
+}
 
-    /* .title {
+@media (max-width: 768px) {
+
+    body {
+        max-width: 768px;
+        min-width: fit-content;
+    }
+
+    .header-container {
+        max-width: 339px;
+    }
+
+    .main-container {
+        max-width: 339px;
+    }
+
+    .main-section-1 {
+        height: 476px;
+    }
+
+    .title {
         font-family: 'Yeseva One';
         font-style: normal;
         font-weight: 400;
         font-size: 23px;
         line-height: 31px;
         text-transform: uppercase;
-        max-width: 346px;
-        text-align: center;
+        color: #FFFFFF;
+        text-align: left;
+    }
+
+    .subtitle {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    
+    .h3-subtitle {
+        font-size: 22px;
+        line-height: 30px;
     }
 
     .bigger-text {
         font-size: 14px;
         line-height: 19px;
+        text-align: left;
     }
-    */
+
+    .regular-text {
+        font-size: 11px;
+        line-height: 19px;
+        width: inherit;
+    }
+
+    .smaller-text {
+        font-size: 11px;
+        line-height: 17px;
+    }
+
+    .even-smaller-text {
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    .button {
+        width: 338px;
+    }
+
+    .section-1-container p {
+        margin-bottom: 32px;
+    }
+    
+    .button-transparent {
+        margin-top: 26px;
+    }
+
+    .section-2-description-list h3 {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .section-2-image-mobile-wrapper {
+        width: 339px;
+        margin-top: 36px;
+    }
+
+    .img-opacity {
+        height: 207px;
+        width: 339px;
+    }
+
+    .img-opacity img{
+        width: 339px;
+        height: 207px;
+    }
+
+    .play-button {
+        top: 87px;
+        right: 147px;
+        background-image: url(../images/play_button_smaller.svg);
+        padding: 0;
+    }
+
+    .text-field-input {
+        width: 339px;
+    }
+
+    .checkbox-wrapper {
+        margin: 0;
+        align-self: flex-start;
+    }
+
+    .checkbox-wrapper .smaller-text {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .section-4-list-repairs-wrapper {
+        width: inherit;
+        background-image: url(../images/Section3_repairs_list_img1_mobile.jpg);
+    }
+
+    .section-4-list-repairs-wrapper:nth-child(2) {
+        background-image: url(../images/Section3_repairs_list_img2_mobile.jpg);
+    }
+    
+    .section-4-list-repairs-wrapper:nth-child(3) {
+        background-image: url(../images/Section3_repairs_list_img3_mobile.jpg);
+    }
+
+    .section-4-list-repairs {
+        width: 270px;
+        height: 241px;
+    }
+
+    .section-4-list-repairs-button {
+        bottom: 2px;
+    }
+
+    .section-4-list-repairs-item .h3-subtitle {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .section-4-list-repairs-sublist .smaller-text {
+        font-size: 13px;
+        line-height: 22px;
+    }
+    
+    .section-4-list-repairs .button {
+        width: 190px;
+        font-size: 15px;
+        line-height: 21px;
+        padding: 12px 0;
+    }
+
+    .footer-upper-section {
+        margin-top: 150px;
+    }
+
+    .footer-image-mobile-wrapper {
+        width: 339px;
+        top: -121.5px;
+    }
+
+    .footer-image-mobile {
+        width: inherit;
+    }
+
+    .questions-form {
+        margin-top: 152px;
+    }
+
+    .questions-form-flex {
+        width: inherit;
+    }
+
+    .questions-form-flex input {
+        width: 339px;
+    }
+
+    .questions-form-not-flex input {
+        width: 339px;
+    }
+
+    .footer-checkbox-wrapper label {
+        font-size: 14px;
+        line-height: 23px;
+    }
+    
+    .footer-map {
+        display: none;
+    }
+
+    .footer-map-mobile-small {
+        display: block;
+    }
+
+    .footer-box-order {
+        margin: 96px 0 50px;
+        height: 430px;
+    }
+
+    .address-footer {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
 }
